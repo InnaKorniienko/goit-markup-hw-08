@@ -30,6 +30,7 @@ h1, h2, h3, h4, p {
 }
 
 ul, ol {
+  list-style: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -37,10 +38,6 @@ ul, ol {
 
 img {
   display: block;
-}
-
-.list {
-  list-style: none;
 }
 
 .link {
