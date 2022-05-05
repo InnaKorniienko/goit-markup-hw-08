@@ -1,7 +1,6 @@
 .header__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .header {
@@ -199,7 +198,7 @@
     }
 
     .contacts__item:not(:last-child) {
-        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
       
     .contacts__link {
@@ -231,9 +230,16 @@
     }
 }
 
+@media screen and (max-width: 1199px) {
+.header__container {
+    justify-content: space-between;
+}
+}
+
 @media screen and (min-width: 1200px) {
     .contacts {
         display: flex;
+        margin-left: auto;
     }
 
     .logo {
@@ -247,13 +253,17 @@
         padding-bottom: 0;
 
         &:not(:last-child){
-            margin-right: 50px;
-            padding-bottom: 0;
+            margin-right: 30px;
+            margin-bottom: 0;
         } 
     }
 
     .contacts__link {
         font-size: 14px;
         line-height: 1.14;
+    }
+
+    .nav-header__link--active::after {
+            bottom: -24px;
     }
 }
